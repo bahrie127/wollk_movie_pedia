@@ -14,7 +14,7 @@ class _TrendingPageState extends State<TrendingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Trending Today')),
+      appBar: AppBar(title: const Text('TV Series Today')),
       body: BlocBuilder<TrendingCubit, TrendingState>(
         builder: (context, state) {
           if (state is TrendingLoading) {
